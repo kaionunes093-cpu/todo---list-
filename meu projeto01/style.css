@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* caixa estilo celular */
+.container {
+  width: 320px;
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  color: white;
+}
+
+/* título */
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* input */
+input {
+  width: 65%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* botões */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* lista */
+li {
+  display: flex;
+  justify-content: space-between;
+  background: #334155;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* tarefa concluída */
+.concluida {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* botão excluir */
+li button {
+  background: red;
+  color: white;
+}
+
+/* animação aparecer */
+li {
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
